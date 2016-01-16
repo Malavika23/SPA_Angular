@@ -1,0 +1,128 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+.navbar-default{
+    position:relative;
+    height:60px;
+    width:100%;
+}
+@media screen and (max-width:360px){
+#wrapper{
+    width:100%;
+}
+.header{
+    width:100%;
+}
+}
+.navbar-default1{
+    position:relative;
+    margin-left:0px;
+    margin-top:-13px;
+    margin-right:210px;
+    width:22%;
+    height:auto;
+    padding:0px;
+    float:left;
+    border:1px solid #f8f8f8;
+    background-color:#f8f8f8;
+}
+.dropdown-menu>li{
+    display:block;
+}
+.f1>li{
+    border-bottom:1px solid #f0f0f0 ;
+}
+.fi{
+    float:right;
+    margin-right:0px;
+}
+.navbar-default2{
+    position:absolute;
+    margin-right:0px;
+    margin-left:320px;
+}
+.f2{
+    background:#f8f8f8;
+    position:relative;
+    border:1px solid #f0f0f0;
+}
+.f3{
+    border:1px solid #f0f0f0;
+}
+.p1{
+    border:1px solid #f0f0f0;
+    padding:0px;
+    margin:5px;
+}
+.tab1{
+    border:1px solid #f8f8f8;
+    padding:5px;
+}
+.pan-body{
+    border:1px solid #f0f0f0;
+    margin-right: 10px ;
+    margin-left:10px;
+}
+.p2{
+    border:1px solid #f0f0f0;
+    padding:0px;
+    margin:10px;
+    margin-left:410px;
+    overflow:hidden;
+    margin-top:320px;
+}
+.p12{
+    border:1px solid #f0f0f0;
+    margin-left:50px;
+    padding:0px;
+    overflow:hidden;
+    margin-top:50px;
+}
+
+.b1{
+    padding:0px;
+    margin-right:0px;
+   float:right;
+}
+.b2{
+    clear:both;
+    border:solid 1px #f0f0f0;
+    margin:2px;
+}
+.b3{
+    padding:0px;
+    float:left;
+    margin-left:0px;
+    margin-top:200px;
+}
+.b4{
+    float:right;
+    border:solid 1px #f0f0f0;
+    margin:2px;
+}
+.pch{
+    border:1px solid #f0f0f0;
+    padding:0px;
+    margin:5px;
+    margin-right:110px;
+    float:right;
+    height:350px;
+    overflow:scroll;
+}
+.acc{
+    border:1px solid #f0f0f0;
+    padding:0px;
+    margin:10px;
+    margin-left:400px;
+}
+.pb{
+    background-color:aqua;
+}
+.second-level li a{
+    padding-left:20px;
+    padding:5px;
+    margin-left:15px;
+    display:block;
+    text-decoration:none;
+}

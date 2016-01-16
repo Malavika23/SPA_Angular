@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $('.header').load('index.html');
+        });
+    </script>
+    <title>Tables</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="navbar-default2 col-md-8">
+        <h3><b>Tables</b></h3>
+        <hr />
+        <div class="panel-default p1 col-md-10">
+            <div class="panel-heading">
+                Data Tables
+            </div>
+            <div class="panel-body col-md-6">
+              <label>show: </label>  <select>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                </select>
+            </div>
+            <div class="col-md-5 panel-body">
+                <label>Search:</label>
+                <input type="text" name="search"/>
+            </div>
+            <div class="col-md-11">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                            <th>Rendering engine</th>
+                            <th>Browser</th>
+                            <th>Platform</th>
+                            <th>Engine Version</th>
+                            <th>CSS grade</th>
+                    </thead>
+                   <tr>
+                       <td>Gecko</td>
+                       <td>Mozilla</td>
+                       <td>Win 1.8</td>
+                       <td>4.9</td>
+                       <td>A</td>
+                   </tr>
+                    <tr>
+                        <td>Gecko</td>
+                        <td>Chrome</td>
+                        <td>Win 1.8</td>
+                        <td>4.9</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Gecko</td>
+                        <td>Opera</td>
+                        <td>Win 1.8</td>
+                        <td>4.9</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

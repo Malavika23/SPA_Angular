@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <title>Bootstrap</title>
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $('.second-level').hide();
+            $('.third-level').hide();
+            $('ul.nav li').on('click', function () {
+                $(this).find('.second-level').slideDown(200);
+            });
+            $('ul.nav li').on('mouseleave', function () {
+                $(this).find('.second-level').slideUp(200);
+            });
+            $('ul.nav li ul').on('click', function () {
+                $(this).find('.third-level').slideDown(200);
+            });
+            $('ul.nav li ul').on('mouseleave', function () {
+                $(this).find('.third-level').slideUp(200);
+            });
+        });
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-default" style="margin:0px;padding:0px;">
+     <div class="container-fluid">
+            <div class="navbar navbar-header">
+                   SB AdminV-2.0
+                 </div>
+             <div class="navbar navbar-header col-lg-4">
+                 <ul class="nav nav-pills" style="margin-left:110px">
+                     <li>
+                         <a href="#">
+                             <span class="fa fa-envelope"></span>
+                             <span class="caret"></span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <span class="fa fa-list"></span>
+                             <span class="caret"></span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <span class="fa fa-bell"></span>
+                             <span class="caret"></span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <span class="fa fa-user"></span>
+                             <span class="caret"></span>
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+ </nav>
+    <div class="navbar-default1" role="navigation">
+            <form action="#" class="navbar-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"> 
+                        <span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav f1">
+                <li class="active"> 
+                    <a href="index1.html">
+                    <span class="fa fa-dashboard">&nbsp
+                    </span>Dashboard</a>
+                </li>
+                <li >
+                <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-line-chart">&nbsp</span>Charts
+                    <span class="glyphicon glyphicon-chevron-right fi"></span></a>
+                    <ul class="second-level">
+                        <li><a href="#">Float Charts</a></li>
+                        <li><a href="#">js charts </a></li>
+                    </ul>
+                </li>
+                <li><a href="tables.html">
+                    <span class="fa fa-table">&nbsp</span>Tables</a>
+                </li>
+                <li><a href="form.html">
+                    <span class="fa fa-pencil">&nbsp</span>Forms</a>
+                </li>
+                <li>
+                    <a href="#"  role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-gear">&nbsp</span>UI Elements
+                    <span class="glyphicon glyphicon-chevron-right fi"></span></a>
+                    <ul class="second-level">
+                        <li><a href="panel.html"> Panels </a></li>
+                        <li><a href="#">Buttons</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Topography</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" >
+                    <span class="fa fa-sitemap">&nbsp</span>Multiple Dropdowns
+                    <span class="glyphicon glyphicon-chevron-right fi"></span></a>
+                    <ul class="second-level">
+                        <li><a href="#">Second Level</a></li>
+                        <li>
+                            <a href="#">
+                            Third Level</a>
+                        <ul class="third-level">
+                            <li><a href="#">3-1</a></li>
+                            <li><a href="#">3-2</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li  >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="fa fa-map">&nbsp</span>Sample-pages
+                        <span class="glyphicon glyphicon-chevron-right fi"></span></a>
+                        <ul class="second-level">
+                            <li><a href="blank.html"> Blank Page</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                        </ul>
+                   </li>
+
+                </ul>
+         </div>
+    
+</body>
+</html>

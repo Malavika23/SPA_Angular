@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>Bootstrap</title>
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $('.second-level').hide();
+            $('.third-level').hide();
+            $('ul.nav li').on('click', function () {
+                $(this).find('.second-level').slideDown(200);
+            });
+            $('ul.nav li').on('mouseleave', function () {
+                $(this).find('.second-level').slideUp(200);
+            });
+            $('ul.nav li ul').on('click', function () {
+                $(this).find('.third-level').slideDown(200);
+            });
+            $('ul.nav li ul').on('mouseleave', function () {
+                $(this).find('.third-level').slideUp(200);
+            });
+         });
+    </script>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <nav class="navbar navbar-default" style="margin:0px;padding:0px;">
+            <div class="header">
+                <div class="navbar navbar-header col-md-8 ">
+                    <a class="navbar-brand" href="#">
+                        SB AdminV-2.0
+                    </a>
+                </div>
+                <div class="navbar navbar-header col-md-4">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-envelope"></span>
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-list"></span>
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-bell"></span>
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-user"></span>
+                                <span class="caret"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-default1" role="navigation" ng-controller="myCtrl">
+            <form action="#" class="navbar-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="fa fa-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav f1">
+                <li class="active" ng-repeat="menuitem in menu">
+                    <a href="{{menuitem.link}}">
+                        <span ng-class="menuitem.icon"> &nbsp</span>
+                        {{menuitem.title}}                        
+                    </a>
+                    <ul class="second-level" ng-repeat="smenu in menuitem.submenu">
+                        <li>
+                            <a href="{{smenu.link}}">{{smenu.title}}</a>
+                            <ul class="third-level" ng-repeat="subsub in smenu.sub">
+                                <li>
+                                    <a href="#">{{subsub.title}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ng-include src="'index1-ng.html'"></ng-include>
+        </div>
+    </div>
+</body>
+</html>

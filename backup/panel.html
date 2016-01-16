@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $('.header').load('index.html');
+        });
+    </script>
+    <title>Panels</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="navbar-default2 col-md-8">
+        <h3><b>Panel</b></h3>
+        <hr />
+        <div class="col-md-4 panel-default p1">
+            <div class="panel-heading">
+                Panel 1
+            </div>
+            <div class="panel-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            </div>
+        </div>
+        <div class="col-md-4 panel-success p1">
+            <div class="panel-heading">
+                Panel 2
+            </div>
+            <div class="panel-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            </div>
+        </div>
+        <div class="col-md-3 panel-danger p1">
+            <div class="panel-heading">
+                Panel 3
+            </div>
+            <div class="panel-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            </div>
+        </div>
+     </div>
+    <div class="panel-default acc col-md-8">
+        <div class="panel-heading">
+            Collapsible Accordian
+        </div>
+        <div class="panel-body">
+            <div class="panel-group" id="accordian">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible item #1</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                HTML stands for HyperText Markup Language. HTML is the main markup
+                                language for describing the structure of Web pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible item #2</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>HTML stands for HyperText Markup Language. HTML is the main markup 
+                            language for describing the structure of Web pages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible item #3</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>HTML stands for HyperText Markup Language. HTML is the main markup
+                             language for describing the structure of Web pages.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+    <div class="panel-default col-md-4 acc">
+        <div class="panel-heading">
+            Basic Tabs
+        </div>
+        <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+                <li><a href="#Home1" aria-expanded="false" data-toggle="tab">About</a></li>
+                <li><a href="#Home3" aria-expanded="false"data-toggle="tab">Contact Us</a></li>
+                <li><a href="#Home4" aria-expanded="false" data-toggle="tab">More</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="Home">
+                    <h3>Home</h3><br />
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </span>
+                </div>
+                <div class="tab-pane fade" id="Home1">
+                    <h3>About</h3><br />
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </span>
+                </div>
+                <div class="tab-pane fade" id="Home3">
+                    <h3>Contact Us</h3><br />
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </span>
+                </div>
+                <div class="tab-pane fade" id="Home4">
+                    <h3>More</h3><br />
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
